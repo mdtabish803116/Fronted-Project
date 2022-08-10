@@ -1,0 +1,136 @@
+{
+    "flights" : [
+        {
+             "name" : "flight1",
+            "source" : "Delhi",
+             "destination" : "Mumbai",
+              "arrival" : "10:10",
+              "departure" : "14:20",
+               "date" : "10-08-2022",
+               "price" : "15,000",
+                "offers" : [{
+                     "duration" : "6",
+                       "price" : "7,500"
+                      
+                },{
+                  "duration" : "3",
+                  "price" : "12,000"
+                }]
+        },
+        {
+          "name" : "flight2",
+         "source" : "Delhi",
+          "destination" : "Hyderabad",
+           "arrival" : "8:00",
+           "departure" : "12:20",
+            "date" : "11-08-2022",
+             "price" : "12,000",
+             "offers" : [{
+              "duration" : "6",
+                "price" : "6,000"
+               
+         },{
+           "duration" : "3",
+           "price" : "10,000"
+         }]
+     },
+     {
+      "name" : "flight3",
+     "source" : "Patna",
+      "destination" : "Mumbai",
+       "arrival" : "11:10",
+       "departure" : "18:20",
+       "date" : "12-08-2022",
+       "price" : "20,000",
+         "offers" : [{
+              "duration" : "6",
+                "price" : "10,000"
+               
+         },{
+           "duration" : "3",
+           "price" : "16,000"
+         }]
+ },
+ {
+  "name" : "flight4",
+ "source" : "Kolkata",
+  "destination" : "Patna",
+   "arrival" : "9:10",
+   "departure" : "11:20",
+   "date" : "12-08-2022",
+   "price" : "8,000",
+   "offers" : [{
+        "duration" : "6",
+          "price" : "4,000"
+         
+   },{
+     "duration" : "3",
+     "price" : "7,000"
+   }]
+}, {
+  "name" : "flight5",
+ "source" : "Chennai",
+  "destination" : "Hyderabad",
+   "arrival" : "10:10",
+   "departure" : "12:20",
+   "date" : "12-08-2022",
+   "price" : "10,000",
+   "offers" : [{
+        "duration" : "6",
+          "price" : "5,000"
+         
+   },{
+     "duration" : "3",
+     "price" : "8,000"
+   }]
+},
+{
+  "name" : "flight6",
+ "source" : "Delhi",
+  "destination" : "Mumbai",
+   "arrival" : "10:10",
+   "departure" : "14:20",
+   "price" : "14,000",
+   "offers" : [{
+        "duration" : "6",
+          "price" : "7,000"
+         
+   },{
+     "duration" : "3",
+     "price" : "10,000"
+   }]
+},
+{
+  "name" : "flight7",
+ "source" : "Chennai",
+  "destination" : "Mumbai",
+   "arrival" : "10:10",
+   "departure" : "14:20",
+   "price" : "14,000",
+   "offers" : [{
+        "duration" : "6",
+          "price" : "7,000"
+         
+   },{
+     "duration" : "3",
+     "price" : "10,000"
+   }]
+},
+{
+  "name" : "flight8",
+ "source" : "Delhi",
+  "destination" : "kolkata",
+   "arrival" : "10:10",
+   "departure" : "14:20",
+   "price" : "14,000",
+   "offers" : [{
+        "duration" : "6",
+          "price" : "7,000"
+         
+   },{
+     "duration" : "3",
+     "price" : "10,000"
+   }]
+}
+    ]
+}
