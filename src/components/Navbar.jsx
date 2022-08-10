@@ -8,12 +8,11 @@ import React from "react";
 export const Navbar = () => {
     const SECRET = "tyruyqaguytughjgh";
        const dispatch = useDispatch();
-       const {auth } = useSelector((state) => state.loginUser);
+       const {auth , loginUser} = useSelector((state) => state.loginUser);
        const [user , setUser] = React.useState({})
 
-       let thunkUserAuth = localStorage.getItem('thunkUserAuth');
-
-        let token = thunkUserAuth.loginUser.token
+    
+        let token = loginUser.token
 
        React.useEffect(() => {
 
@@ -31,7 +30,7 @@ export const Navbar = () => {
       }, [token])
 
 
-console.log(user.name)
+console.log(user)
 
       return(
         <Flex className = "flex"  

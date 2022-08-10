@@ -3,6 +3,7 @@ import {Routes , Route} from "react-router-dom";
 import {Home} from "./components/Home"
 import {Login} from "./components/Login";
 import {Register} from "./components/Register";
+import {FliteList} from "./components/FliteList";
 import {loginUserSuccess , logOut} from "./Redux/Login/action";
 import {useDispatch} from "react-redux";
 import React from "react";
@@ -20,10 +21,19 @@ function App() {
   return (
     <div>
            <Navbar />
+            <div style = {{
+                  width : "40%",
+                  margin : "auto",
+                  paddingTop : "50px",
+            }}>
+               <img style = {{display : "block" , margin : "auto" , borderRadius : "50%"}}src = "aeroplane.jpg"/>
+            </div>
+          
            <Routes>
                 <Route path = "/" element = {<Home/>}></Route>
                 <Route path = "/register" element = {<Register/>}></Route>
                 <Route path = "/login" element = {<Login/>}></Route>
+                <Route path = "/flightlist" element = {<FliteList/>}></Route>
            </Routes>
     </div>
   );

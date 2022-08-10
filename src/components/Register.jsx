@@ -98,7 +98,7 @@ const handleSubmit = (e) => {
 }
 
 const handleClose = () => {
-      if(user.message === "Registration Success"){
+      if(user.message){
               onClose();
               navigate("/login")
       }else {
@@ -167,7 +167,7 @@ if(error){
 
             <AlertDialogBody>
                    {
-                        user.message ===  "Registration Success"?("Registration Succesfull"):(" user already exists")
+                        user.message?("Registration Succesfull"):(" user already exists")
                    }
               
             </AlertDialogBody>

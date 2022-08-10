@@ -26,8 +26,8 @@ async(dispatch) => {
               }),
               headers : {
                  "Content-Type": "application/json"
-              },
-               mode: 'no-cors'
+              }
+             
        })
           let data = await res.json();
          dispatch(registerUserSuccess(data));
