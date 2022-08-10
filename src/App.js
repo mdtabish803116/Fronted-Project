@@ -3,7 +3,8 @@ import {Routes , Route} from "react-router-dom";
 import {Home} from "./components/Home"
 import {Login} from "./components/Login";
 import {Register} from "./components/Register";
-import {FliteList} from "./components/FliteList";
+import {FlightList} from "./components/FlightList";
+import {Payment} from "./components/Payment";
 import {loginUserSuccess , logOut} from "./Redux/Login/action";
 import {useDispatch} from "react-redux";
 import React from "react";
@@ -33,7 +34,8 @@ function App() {
                 <Route path = "/" element = {<Home/>}></Route>
                 <Route path = "/register" element = {<Register/>}></Route>
                 <Route path = "/login" element = {<Login/>}></Route>
-                <Route path = "/flightlist" element = {<FliteList/>}></Route>
+                <Route path = "/flightlist" element = {<FlightList/>}></Route>
+                <Route path = "/payment" element = {<Payment/>}></Route>
            </Routes>
     </div>
   );

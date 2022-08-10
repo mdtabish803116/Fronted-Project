@@ -40,9 +40,9 @@ export const Home = () => {
 
          let currentStringDate = year.toString()+month.toString()+day.toString()
 
-         console.log(currentStringDate)
+      //    console.log(currentStringDate)
 
-         console.log(date.split("-").join(""))
+      //    console.log(date.split("-").join(""))
 
          let differenceDate = parseInt(date.split("-").join("")) - parseInt(currentStringDate)
 
@@ -52,9 +52,19 @@ export const Home = () => {
          }
 
          const handleClose = () => {
-            (fromCity !== "" && toCity !== "" && date !== "" && differenceDate >= 0)?(
+            if(fromCity !== "" && toCity !== "" && date !== "" && differenceDate >= 0){
+                     
+                  localStorage.setItem("flightDetails" , JSON.stringify({
+                        source : fromCity,
+                         destination : toCity,
+                         bookingDate : date
+                 }))
+        
                   navigate("/flightlist")
-            ):(onClose())
+
+            }else {
+                    onClose()
+            }
       }
 
 

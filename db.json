@@ -5,7 +5,7 @@
             "source" : "Delhi",
              "destination" : "Mumbai",
               "arrival" : "10:10",
-              "departure" : "14:20",
+              "departure" : "10:40",
                "date" : "2022-08-11",
                "price" : "15,000",
                 "offers" : [{
@@ -22,7 +22,7 @@
          "source" : "Delhi",
           "destination" : "Hyderabad",
            "arrival" : "8:00",
-           "departure" : "12:20",
+           "departure" : "8:25",
             "date" : "2022-08-12",
              "price" : "12,000",
              "offers" : [{
@@ -39,7 +39,7 @@
      "source" : "Patna",
       "destination" : "Mumbai",
        "arrival" : "11:10",
-       "departure" : "18:20",
+       "departure" : "11:50",
        "date" : "2022-08-11",
        "price" : "20,000",
          "offers" : [{
@@ -56,7 +56,7 @@
  "source" : "Kolkata",
   "destination" : "Patna",
    "arrival" : "9:10",
-   "departure" : "11:20",
+   "departure" : "9:52",
    "date" : "2022-08-13",
    "price" : "8,000",
    "offers" : [{
@@ -72,7 +72,7 @@
  "source" : "Chennai",
   "destination" : "Hyderabad",
    "arrival" : "10:10",
-   "departure" : "12:20",
+   "departure" : "10:55",
    "date" : "2022-08-12",
    "price" : "10,000",
    "offers" : [{
@@ -89,7 +89,7 @@
  "source" : "Delhi",
   "destination" : "Mumbai",
    "arrival" : "10:10",
-   "departure" : "14:20",
+   "departure" : "10:56",
    "date" : "2022-08-13",
    "price" : "14,000",
    "offers" : [{
@@ -106,7 +106,7 @@
  "source" : "Chennai",
   "destination" : "Mumbai",
    "arrival" : "10:10",
-   "departure" : "14:20",
+   "departure" : "10:45",
    "date" : "2022-08-11",
    "price" : "14,000",
    "offers" : [{
@@ -123,7 +123,7 @@
  "source" : "Delhi",
   "destination" : "kolkata",
    "arrival" : "10:10",
-   "departure" : "14:20",
+   "departure" : "10:44",
    "date" : "2022-08-11",
    "price" : "14,000",
    "offers" : [{
