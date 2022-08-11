@@ -69,7 +69,7 @@ export const Home = () => {
 
 
       return(
-        <Box w = "30%" m = "auto"> 
+        <Box style = {{"box-shadow": "rgba(0, 0, 0, 0.35) 0px 5px 15px" , "borderRadius" : "10px" , "marginTop" : "30px"}}  w = "40%" m = "auto" p = "10px" > 
               <Box>
                   <Box fontWeight = "600" fontSize = "30px">From</Box>
               <Select  placeholder='Select City' onChange = {(e)=>setFromCity(e.target.value) }>
@@ -96,7 +96,7 @@ export const Home = () => {
                      <Input type = "date" onChange = {(e) => setDate(e.target.value)}/>
               </Box>
                 <Center>
-                  <Button  mt = "30px" onClick = {handleClick}>Search Flite</Button>
+                  <Button  bg = "teal" color = "grey" mt = "30px" onClick = {handleClick}>Search Flite</Button>
                 </Center>
 
                 <AlertDialog

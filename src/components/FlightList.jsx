@@ -17,7 +17,7 @@ export function FlightList(){
 
          function getFlightDetails(){
                if(flightDetails){  
-               fetch(` http://localhost:8080/flights?source=${flightDetails.source}&destination=${flightDetails.destination}`)
+               fetch(` ${process.env.REACT_APP_BASE_URL}/flights?source=${flightDetails.source}&destination=${flightDetails.destination}`)
                 .then((res) => res.json())
                 .then((res) => {
                       setFlightData(res)
@@ -33,8 +33,10 @@ export function FlightList(){
         }, [])
 
 
-          function handleBook(){
-                auth?navigate("/payment"):navigate("/login")
+          function handleBook(id){
+                auth?(
+                  navigate(`/payment/${id}`))
+                  :navigate("/login")
           }
 
   if(flightData.length == 0){
@@ -48,7 +50,7 @@ export function FlightList(){
 
                     <div style = {{fontWeight : "600" , fontSize : "30px" , textAlign : "center" , marginBottom : "20px"}}>{`${flightData.length} flight found`}</div>
                  
-                   <table id = "flightTable" style = {{width : "100%"}}>
+                   <table id = "flightTable" style = {{"boxShadow": "rgba(0, 0, 0, 0.35) 0px 5px 15px" , "borderRadius" : "10px" , "marginTop" : "30px" , "width" : "100%"}}>
                           <thead>
                                  <tr>
                                        <th>Serial No.</th>
@@ -73,7 +75,7 @@ export function FlightList(){
                                                   <td>{data.departure}</td>
                                                   <td>{`Rs. ${data.price}`}</td>
                                                   <td>
-                                                        <Button onClick = {handleBook}>Book Now</Button>
+                                                        <Button onClick = {()=> handleBook(data.id)} bg = "teal" color = "grey">Book Now</Button>
                                                   </td>
                                             </tr>
                                     )) 

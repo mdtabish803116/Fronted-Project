@@ -173,7 +173,7 @@ if(error){
             </AlertDialogBody>
 
             <AlertDialogFooter>
-              <Button colorScheme='red' onClick={handleClose} ml={3}>
+              <Button colorScheme='teal' onClick={handleClose} ml={3}>
                 OK
               </Button>
             </AlertDialogFooter>
